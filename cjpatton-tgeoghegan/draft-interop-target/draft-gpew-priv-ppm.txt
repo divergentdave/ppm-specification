@@ -5,12 +5,12 @@
 Network Working Group                                       T. Geoghegan
 Internet-Draft                                                      ISRG
 Intended status: Standards Track                               C. Patton
-Expires: 15 August 2022                                       Cloudflare
+Expires: 2 September 2022                                     Cloudflare
                                                              E. Rescorla
                                                                  Mozilla
-                                                               C.A. Wood
+                                                              C. A. Wood
                                                               Cloudflare
-                                                        11 February 2022
+                                                            1 March 2022
 
 
                      Privacy Preserving Measurement
@@ -54,7 +54,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 15 August 2022.
+   This Internet-Draft will expire on 2 September 2022.
 
 Copyright Notice
 
@@ -801,7 +801,7 @@ struct {
    <--------------------------------- AggregateResp (State 2)  /
 
 
-   AggregateShareReq (Rports 1-20) ------------------------->
+   AggregateShareReq (Reports 1-20) ------------------------>
    <----------------------------- AggregateShareResp (Result)
 
      Figure 2: Aggregation Flow (batch size=20).  Multiple aggregation
@@ -2496,23 +2496,19 @@ Authors' Addresses
 
    Tim Geoghegan
    ISRG
-
    Email: timgeog+ietf@gmail.com
 
 
    Christopher Patton
    Cloudflare
-
    Email: chrispatton+ietf@gmail.com
 
 
    Eric Rescorla
    Mozilla
-
    Email: ekr@rtfm.com
 
 
    Christopher A. Wood
    Cloudflare
-
    Email: caw@heapingbits.net
