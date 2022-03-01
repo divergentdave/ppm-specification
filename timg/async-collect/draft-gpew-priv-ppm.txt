@@ -1009,11 +1009,11 @@ AggregateShareReq (State 4) -------------------------------->
    When both aggregator's shares are successfully obtained, then the
    leader responds to subsequent HTTP GET requests to
    CollectResp.collect_job with HTTP status 200 OK and a body consisting
-   of a CollectResp:
+   of a CollectResult:
 
    struct {
      EncryptedAggregateShare shares<1..2^8-1>;
-   } CollectResp;
+   } CollectResult;
 
    *  shares is a vector of EncryptedAggregateShares, as described in
       Section 4.3.2, except that for the leader's share, the task_id and
@@ -1025,7 +1025,7 @@ AggregateShareReq (State 4) -------------------------------->
    error status and a problem document as described in Section 3.1.
 
    The leader SHOULD retain aggregate shares for a reasonable amount of
-   time.  Even after serving a CollectResp to the collector, leaders
+   time.  Even after serving a CollectResult to the collector, leaders
    SHOULD continue to respond to further GET requests to
    CollectResp.collect_job in case the collector does not receive the
    response the first time.
@@ -1618,7 +1618,9 @@ AggregateShareReq (State 4) -------------------------------->
 
    *  CollectReq Section 4.4: "message/ppm-collect-req"
 
-   *  CollectResp Section 4.4: "message/ppm-collect-req"
+   *  CollectResp Section 4.4: "message/ppm-collect-resp"
+
+   *  CollectResult Section 4.4: "message/ppm-collec-result"
 
    The definition for each media type is in the following subsections.
 
