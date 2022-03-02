@@ -5,12 +5,12 @@
 Network Working Group                                       T. Geoghegan
 Internet-Draft                                                      ISRG
 Intended status: Standards Track                               C. Patton
-Expires: 2 September 2022                                     Cloudflare
+Expires: 3 September 2022                                     Cloudflare
                                                              E. Rescorla
                                                                  Mozilla
                                                               C. A. Wood
                                                               Cloudflare
-                                                            1 March 2022
+                                                            2 March 2022
 
 
                      Privacy Preserving Measurement
@@ -54,7 +54,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 2 September 2022.
+   This Internet-Draft will expire on 3 September 2022.
 
 Copyright Notice
 
@@ -1012,7 +1012,7 @@ AggregateShareReq (State 4) -------------------------------->
    of a CollectResult:
 
    struct {
-     EncryptedAggregateShare shares<1..2^8-1>;
+     EncryptedAggregateShare shares<1..2^24-1>;
    } CollectResult;
 
    *  shares is a vector of EncryptedAggregateShares, as described in
