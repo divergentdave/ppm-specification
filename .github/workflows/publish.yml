@@ -36,10 +36,10 @@ jobs:
           refcache-
 
     - name: "Build Drafts"
-      uses: martinthomson/i-d-template@v1
+      uses: divergentdave/i-d-template@v1-alpha
 
     - name: "Upload to Datatracker"
-      uses: martinthomson/i-d-template@v1
+      uses: divergentdave/i-d-template@v1-alpha
       with:
         make: upload
 
